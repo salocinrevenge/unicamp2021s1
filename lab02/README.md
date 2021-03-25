@@ -1,1 +1,1 @@
-notebook com tarefa do lab 2.
+[notebook](lab02-java-estruturas-ra186132.ipynb) com tarefa do lab 2.
