@@ -1,10 +1,12 @@
 package mc322.lab03;
 
+// Nota do programador: seria mais organizado e eficiente permitir a contrucao de duas classes separadas: lombriga e aquario.
+
 public class AquarioLombriga {
 	int tamanhoLombriga;
 	int x;
 	int tamanhoAquario;
-	//sÛ È neccess·rio x, j· que nosso cen·rio È unidimensional
+	//s√≥ √© neccess√°rio x, j√° que nosso cen√°rio √© unidimensional
 	boolean direcaoLombriga;//true = direita, false = esquerda. Equivalente a "boolean direita;"
 	
 	AquarioLombriga(int tamanhoAquario, int tamanhoLombriga, int posicao)
@@ -14,7 +16,7 @@ public class AquarioLombriga {
 		x=posicao;
 		if(!dentroIntervalo(x,1,tamanhoAquario)||!dentroIntervalo(x+tamanhoLombriga,1,tamanhoAquario))
 		{
-			System.out.println("Oh no, sua lombriga È t„o grande que quebrou o aqu·rio!!!");
+			System.out.println("Oh no, sua lombriga √© t√£o grande que quebrou o aqu√°rio!!!");
 			this.tamanhoAquario+=2*tamanhoLombriga;
 		}
 		direcaoLombriga = true;
@@ -25,7 +27,7 @@ public class AquarioLombriga {
 		if(x>1)
 			tamanhoLombriga++;
 		else
-			System.out.println("Sua lombriga est· t„o grande que bate na parede! N„o pode mais crescer!");
+			System.out.println("Sua lombriga est√° t√£o grande que bate na parede! N√£o pode mais crescer!");
 	}
 	
 	void mover()
@@ -34,7 +36,7 @@ public class AquarioLombriga {
 		{
 			if(x+tamanhoLombriga==tamanhoAquario+1)
 			{
-				System.out.println("Sua lombriga bateu a cabeÁa!\n Auch!!!\n Ela se virou\n");
+				System.out.println("Sua lombriga bateu a cabe√ßa!\n Auch!!!\n Ela se virou\n");
 				virar();
 			}
 			else
@@ -44,7 +46,7 @@ public class AquarioLombriga {
 		{
 			if(x==1)
 			{
-				System.out.printf("Sua lombriga bateu a cabeÁa!\n Auch!!!\n Ela se virou\n");
+				System.out.printf("Sua lombriga bateu a cabe√ßa!\n Auch!!!\n Ela se virou\n");
 				virar();
 			}
 			else
