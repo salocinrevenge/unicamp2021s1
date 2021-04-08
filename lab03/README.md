@@ -1,4 +1,4 @@
-**[notebook](lab-lombriga-ra186132.ipynb) com tarefa do lab 3.
+**[notebook](lab-lombriga-ra186132.ipynb) com tarefa do lab 3.**
 
 **[pasta zipada](lab03.zip) com os arquivos deste programa
 
